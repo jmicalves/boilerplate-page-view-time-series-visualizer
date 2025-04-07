@@ -71,11 +71,11 @@ def draw_box_plot():
     sns.boxplot(data = df_box, x='year', y='value', hue='year', ax=ax1, legend=False)
     ax1.set_xlabel('Year')
     ax1.set_ylabel('Page Views')
-    ax1.set_title('Year-wise Box Plot(Trend)')
+    ax1.set_title('Year-wise Box Plot (Trend)')
     sns.boxplot(data = df_box, x='month', y='value', hue='month', ax=ax2, order = month_ord, flierprops={"marker": ".", 'markersize': 2}, legend=False)
     ax2.set_xlabel('Month')
     ax2.set_ylabel('Page Views')
-    ax2.set_title('Month-wise Box Plot(Seasonality)')
+    ax2.set_title('Month-wise Box Plot (Seasonality)')
 
     # Save image and return fig (don't change this part)
     fig.savefig('box_plot.png')
